@@ -43,30 +43,29 @@ ATmega328P ───> MPU6050 (I2C)
        │
        └─> UART Output (Bluetooth/Serial
 
-🧪 How It Works
-  Step Counting
-  Vector magnitude of acceleration (√Xa² + Ya² + Za²)
-  
-  Threshold-based detection (> 1.2g) with a 200ms debounce window
-  
-  Steps shown live on the OLED screen
-  
-  Heart Rate Monitoring
-  ADC samples PPG signal every 2ms
-  
-  Rolling window-based mean & variance used to set adaptive threshold
-  
-  Rising & falling edges count heartbeats
-  
-  Heartbeats in 5s × 12 = BPM estimation
+#🧪 How It Works
 
-🧰 How to Build
+##  Step Counting
+         Vector magnitude of acceleration (√Xa² + Ya² + Za²)
+         
+         Threshold-based detection (> 1.2g) with a 200ms debounce window
+         
+         Steps shown live on the OLED screen
+  
+##  Heart Rate Monitoring
+         ADC samples PPG signal every 2ms
+         
+         Rolling window-based mean & variance used to set adaptive threshold
+         
+         Rising & falling edges count heartbeats
+         
+         Heartbeats in 5s × 12 = BPM estimation
+
+# 🧰 How to Build
   Toolchain Required:
   
   AVR-GCC
-  
   avrdude
-  
   Optional: Atmel Studio / PlatformIO / VS Code
 
 Compile:
@@ -77,16 +76,19 @@ Compile:
 Upload:
   avrdude -c arduino -p m328p -P COMx -b 115200 -U flash:w:smartwatch.hex
   
-🖥️ Display Overview
-  OLED Line	Information
-  Line 0	Title: Medi-care
-  Line 1	Status: Normal
-  Line 2	BPM result or step prompt/result
-  Line 3	Skin temperature
-  Line 7	Version information
+# 🖥️ Display Overview
+  |OLED Line	  |Information                      |
+  |------------|---------------------------------|
+  |Line 0	 |Title: Medi-care                 |
+  |Line 1	 |Status: Normal                   |
+  |Line 2	 |BPM result or step prompt/result |
+  |Line 3	 |Skin temperature                 | 
+  |Line 7	 |Version information              |
 
-🎮 Button Controls
-  Button	Action
-  PB0	Reset BPM and trigger HR reading
-  PD7	Start and stop step counter
+# 🎮 Button Controls
+
+  |Button	|Action                              |  
+  |------------|-----------------------------------|
+  |PB0	        |Reset  BPM and trigger HR reading  |
+  |PD7	        |Start and stop step counter        |
 
