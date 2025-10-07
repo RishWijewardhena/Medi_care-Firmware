@@ -6,13 +6,13 @@ A **bare-metal C** smartwatch system designed using the **ATmega328P**, which mo
 
 ## 🔧 Features
 
-- 🦶 **Step Counting** using MPU6050 accelerometer with threshold filtering  
-- ❤️ **Heart Rate Monitoring (BPM)** using ADC pulse detection (PPG method)  
-- 🌡️ **Skin Temperature Sensing** using analog temperature sensor  
-- 📺 **SSD1306 OLED Display** with I2C communication  
-- 🔄 **UART Output** for Bluetooth/Serial communication to mobile/PC  
-- ⏱️ **Timer-Driven ISR Architecture** for precise timing & low CPU load  
-- 🧠 **Adaptive Threshold Algorithm** for noise-resistant heart rate calculation
+-  **Step Counting** using MPU6050 accelerometer with threshold filtering  
+-  **Heart Rate Monitoring (BPM)** using ADC pulse detection (PPG method)  
+-  **Skin Temperature Sensing** using analog temperature sensor  
+-  **SSD1306 OLED Display** with I2C communication  
+-  **UART Output** for Bluetooth/Serial communication to mobile/PC  
+-  **Timer-Driven ISR Architecture** for precise timing & low CPU load  
+-  **Adaptive Threshold Algorithm** for noise-resistant heart rate calculation
 
 ---
 
