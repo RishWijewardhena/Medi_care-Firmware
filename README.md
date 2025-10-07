@@ -1,4 +1,4 @@
-# 🕒 Smart Health Watch | Embedded C Project
+# 🕒 Smart Health Watch version 1.0
 
 A **bare-metal C** smartwatch system designed using the **ATmega328P**, which monitors **step count**, **heart rate**, and **skin temperature** using the **MPU6050**, an **ADC-based heart rate sensor**, and an **OLED display**. Ideal for embedded systems and wearable health monitoring applications.
 
