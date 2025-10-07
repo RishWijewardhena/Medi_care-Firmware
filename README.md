@@ -92,3 +92,7 @@ Upload:
   |PB0	        |Reset  BPM and trigger HR reading  |
   |PD7	        |Start and stop step counter        |
 
+  # PCB overview 
+  <img width="1007" height="707" alt="Screenshot 2025-10-07 095540" src="https://github.com/user-attachments/assets/362f7791-0c10-4c74-9d7f-a0c4af5e9803" />
+
+
